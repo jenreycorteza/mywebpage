@@ -6,11 +6,25 @@
 -->
 <html>
 	<head>
-		<title>Dimension by HTML5 UP</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+        #bg video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -1;
+            transform: translateX(-50%) translateY(-50%);
+            object-fit: cover;
+        }
+
+        #bg:after {
+            background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
+        }
+    </style>
+</head>
 	</head>
 	<body class="is-preload">
 
@@ -359,4 +373,5 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
