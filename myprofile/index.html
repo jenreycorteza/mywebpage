@@ -32,23 +32,6 @@
     </style>
 </head>
 <style>
-        #bg video {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            min-width: 100%;
-            min-height: 100%;
-            width: auto;
-            height: auto;
-            z-index: -1;
-            transform: translateX(-50%) translateY(-50%);
-            object-fit: cover;
-        }
-
-        #bg:after {
-            background-image: radial-gradient(rgba(0, 0, 0, 0.25) 25%, transparent 55%);
-        }
-    </style>
 </head>	
 </head>
 	<body class="is-preload">
@@ -387,8 +370,12 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			</div>
 
 		<!-- BG -->
-			<div id="bg"></div>
-
+			<div id="bg">
+        <video autoplay muted loop playsinline id="myVideo">
+            <source src="images/background.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+    </div>
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
@@ -398,6 +385,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 	</body>
 </html>
+
 
 
 
